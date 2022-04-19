@@ -7,6 +7,10 @@ app.get('/', (req, res) => {
   res.send('Huy is the best!');
 });
 
+app.get('/ci-cd', (req, res) => {
+  res.send('Run CI/CD');
+});
+
 app.use('/auth', auth);
 
 app.listen(port, () => {
